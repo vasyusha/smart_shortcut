@@ -34,15 +34,15 @@ void smart::Launcer::WorkTitle() {
 	if(existing_window != NULL) {
 		std::wstring full_title = GetWindowTitle(existing_window);
 
-		std::wcout << L"Íàéäåíî îêíî: " << full_title << std::endl;
-		std::wcout << L"Àêòèâèðóåì îêíî..." << std::endl;
+		std::wcout << L"ÐÐ°Ð¹Ð´ÐµÐ½Ð¾ Ð¾ÐºÐ½Ð¾: " << full_title << std::endl;
+		std::wcout << L"ÐÐºÑ‚Ð¸Ð²Ð¸Ñ€ÑƒÐµÐ¼ Ð¾ÐºÐ½Ð¾..." << std::endl;
 		if (ActiveWindow(existing_window)) {
-			std::wcout << L"Îêíî àêòèâèðîâàíî!" << std::endl;
+			std::wcout << L"ÐžÐºÐ½Ð¾ Ð°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¾!" << std::endl;
 		} else {
-			std::wcout << L"Íå óäàëîñü àêòèâèðîâàòü îêíî!" << std::endl;
+			std::wcout << L"ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¾ÐºÐ½Ð¾!" << std::endl;
 		}
 	} else {
-		std::wcout << L"Îêíî íå íàéäåíî. Çàïóñêàåì ïðîãðàììó!" << std::endl;
+		std::wcout << L"ÐžÐºÐ½Ð¾ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾. Ð—Ð°Ð¿ÑƒÑÐºÐ°ÐµÐ¼ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñƒ!" << std::endl;
 
 		PROCESS_INFORMATION process_information = { 0 };
 		STARTUPINFO startup_info = { 0 };
